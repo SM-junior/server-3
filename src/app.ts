@@ -6,9 +6,8 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req: Request, res: Response) => {
-  const a = 10;
-
-  res.send(`Hello from app.ts ${a}`);
+    const a = 'app.ts';
+    res.send(`Hello from ${a}`);
 });
 
 export default app;
